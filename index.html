@@ -4,20 +4,18 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>ECSD Kiosk APP</title>
-    <script src="js/foam.js"></script>
-    <script src="js/cab.js"></script>
-    <script src="config.js"></script>
-    <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            if (window.config && window.config.kioskEnabled) {
-                window.location.href = 'exported_app_view.html';
-            } else {
-                window.location.href = 'designer_view.html';
-            }
-        });
-    </script>
 </head>
 <body>
-    <h1>Loading ECSD Kiosk APP...</h1>
+    <h1>ECSD Kiosk APP</h1>
+    <p>This is a Chrome app designed for ECSD kiosks. It cannot be run directly from this website.</p>
+    <h2>Installation Instructions:</h2>
+    <ol>
+        <li>Download the app from [provide a link to your .crx file or Chrome Web Store if published]</li>
+        <li>Open Chrome and go to chrome://extensions/</li>
+        <li>Enable "Developer mode" in the top right</li>
+        <li>Drag and drop the downloaded .crx file onto the Chrome extensions page</li>
+        <li>Follow the prompts to install the app</li>
+    </ol>
+    <p>For more information, please contact [your contact information].</p>
 </body>
 </html>
