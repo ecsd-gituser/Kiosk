@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ECSD Kiosk APP</title>
+    <script src="js/foam.js"></script>
+    <script src="js/cab.js"></script>
+    <script src="config.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            if (window.config && window.config.kioskEnabled) {
+                window.location.href = 'exported_app_view.html';
+            } else {
+                window.location.href = 'designer_view.html';
+            }
+        });
+    </script>
+</head>
+<body>
+    <h1>Loading ECSD Kiosk APP...</h1>
+</body>
+</html>
